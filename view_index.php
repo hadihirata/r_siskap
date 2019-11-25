@@ -96,7 +96,7 @@
         </br>
          <div class="easyui-panel" title="LIST" collapsible="true" collapsed="true"  style="width:150px;height:auto;padding:5px;">
         	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Jabatan Struktural Pegawai','view_pegawai_action.php')">Jabatan Pegawai</a><br />
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Work</a><br />
+            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Work','view_work.php')">Work</a><br />
             <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Domain</a><br />
             <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Job</a><br />
             
@@ -106,7 +106,7 @@
         </br>
         <div class="easyui-panel" title="GRAFIK" collapsible="true" collapsed="true" style="width:150px;height:auto;padding:5px;">
         	
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Work</a><br />
+            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Work','view_work.php.php')">Work</a><br />
             <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Domain</a><br />
             <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',plain:true" onClick="addTab('Data Petugas','frmPetugas.php')">Job</a><br />
            

@@ -37,12 +37,7 @@ include_once "_class/Koneksi.php";
          $multiQuery[] = "SELECT * FROM tb_pegawai $WHERE $ORDER_BY $LIMIT";
       }break;
 
-      case "m_pegawai" :{
-         $typeRows="combobox";
-         $multiQuery[] = "SELECT * from tb_pegawai ";
-                           
-      }break;
-
+     
       case "pegawai_action" :{
          $emptyMssg = "Data barang tidak tersedia";
          $WHERE    = empty($cari) ? "WHERE 1" : "WHERE `nip_lama`='$cari' OR `nip_baru`='$cari' OR `nama_lengkap` LIKE '$cari%'";
@@ -59,13 +54,7 @@ include_once "_class/Koneksi.php";
          $multiQuery[] = "SELECT * FROM tb_jabatan $WHERE $ORDER_BY $LIMIT";
       }break;
 
-       case "m_jabatan" :{
-         $typeRows="combobox";
-         $multiQuery[] = "SELECT * from tb_jabatan ";
-                           
-      }break;
-
-       case "struktural" :{
+      case "struktural" :{
          $emptyMssg = "Data barang tidak tersedia";
          $WHERE    = empty($cari) ? "WHERE 1" : "WHERE `kode`='$cari' OR `unit_kerja`='$cari' ";
          $ORDER_BY =  "ORDER BY ".( empty($sort) ? 'id' : $sort )." $order";
@@ -73,11 +62,16 @@ include_once "_class/Koneksi.php";
          $multiQuery[] = "SELECT * FROM tb_struktural $WHERE $ORDER_BY $LIMIT";
       }break;
 
-       case "m_struktural" :{
-         $typeRows="combobox";
-         $multiQuery[] = "SELECT * from tb_struktural ";
-                           
+
+      case "work" :{
+         $emptyMssg = "Data barang tidak tersedia";
+         $WHERE    = empty($cari) ? "WHERE 1" : "WHERE `nama`='$cari' OR `sumber`='$cari' ";
+         $ORDER_BY =  "ORDER BY ".( empty($sort) ? 'id' : $sort )." $order";
+         $multiQuery[] = "SELECT COUNT(0) as total FROM works $WHERE";
+         $multiQuery[] = "SELECT * FROM works $WHERE $ORDER_BY $LIMIT";
       }break;
+
+      
 
       case "barang" :{
          $emptyMssg = "Data barang tidak tersedia";
